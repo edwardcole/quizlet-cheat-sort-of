@@ -72,14 +72,11 @@ function main() {
       let button = buttons.item(i);
       let buttonText = button.innerText;
       if (buttonText == sortedCards[question]) {
-        button.style.backgroundColor = "white";
+        //button.style.backgroundColor = "white";
+        button.click()
+        
       }
     }
   } catch (error) {}
 }
-let newButton = createElement("button");
-newButton.innerHTML = "cheat";
-newButton.onclick;
-newButton.addEventListener("click", () => {
-  setInterval(main, 50);
-});
+setInterval(main, 50);
